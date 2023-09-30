@@ -1,3 +1,5 @@
-# Miranda's JS practice assignment
+# JavaScript assignment
 
-It is due on Sep. 29
+By Miranda Cazares
+
+Due Sep. 29, 2023
