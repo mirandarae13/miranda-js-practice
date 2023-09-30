@@ -48,7 +48,104 @@ console.log(i)
 let j = h - i;
 console.log(j)
 
+console.log("working with strings")
+let firstName = 'Miranda';
+let middleName = 'Rae';
+let lastName = 'Cazares';
+let name = firstName + " " + middleName + " " + lastName;
+console.log(name);
 
+// Strings on my own
+let greeting = 'My name is'
+console.log(greeting + " " + name) 
+
+console.log("the subtraction machine")
+/*
+If you had a function that took two arguments and returned their difference ...
+*/
+function subtractionMachine(argument1, argument2) {
+  let newValue = argument1 - argument2;
+  return newValue;
+}
+
+/*
+We can create a variable "difference" and set it to the result or "return"
+of the subtractionMachine function. In this case below, we are giving the
+subractionMachine the "arguments" of 5 and 3.
+*/
+let difference = subtractionMachine(5, 3);
+
+/*
+You can the log the function's value by logging the variable ...
+*/
+console.log(difference);
+
+/*
+If I didn't want to create a variable first, I can 
+log the returned value directly:
+*/
+console.log(subtractionMachine(5, 3));
+
+console.log("Using functions");
+// Functions to make square numbers 
+function makeSquare(theNumb) {
+  let squared = theNumb * theNumb;
+  return squared;
+}
+
+let try01 = makeSquare(6);
+console.log(try01);
+
+let try02 = makeSquare(5);
+console.log(try02);
+
+let try03 = makeSquare(12);
+console.log(try03);
+
+// Functions on my own
+
+function makeName(firstName, middleName, lastName) {
+  let fullName = firstName + ' ' + middleName + ' ' + lastName;
+  return fullName;
+}
+
+let name01 = makeName('Miranda', 'Rae', 'Cazares');
+console.log(name01);
+
+let name02 = makeName('Robert', '"Beto"', "O'Rourke");
+console.log(name02);
+
+let name03 = makeName('Jamie', 'Lee', 'Curtis');
+console.log(name03);
+
+console.log("Making a better name function")
+
+function makeBetterName(firstName, middleName, lastName) {
+  if (middleName. length === 1) {
+    middleName = middleName + ",";
+  }
+  let fullName = firstName + " " + middleName + " " + lastName;
+  return fullName;
+}
+
+console.log(makeBetterName('Ulysses', 'S', 'Grant'));
+console.log(makeBetterName('Michael', 'B', 'Jordan'));
+console.log(makeBetterName('Michael', 'J', 'Fox'));
+
+console.log("scoreCompare function");
+function scoreCompare(home, away) {
+  if (home > away) {
+    return "Home team wins!";
+  } else if (home === away) {
+    return "It was a tie";
+  } else {
+    return "Away team wins :("
+  }
+}
+
+console.log(scoreCompare(5,3));
+console.log(scoreCompare(3,5));
+console.log(scoreCompare(5,5));
 
   </script>
 </body>
